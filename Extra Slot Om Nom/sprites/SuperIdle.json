@@ -1,0 +1,5 @@
+{
+	"superslot248_wait0_0":  { "File": "SuperIdle.bmp", "Rect": "0,0,48,51", "Center": "24,30" },
+	"superslot248_wait0_1":  { "File": "SuperIdle.bmp", "Rect": "49,0,48,51", "Center": "24,30" },
+	"superslot248_wait0_2":  { "File": "SuperIdle.bmp", "Rect": "98,0,48,51", "Center": "24,30" },
+}

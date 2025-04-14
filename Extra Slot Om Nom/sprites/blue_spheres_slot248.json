@@ -1,0 +1,13 @@
+{
+	"bluesphere_slot248_0x01": { "File": "blue_spheres_character_OmNom.png", "Rect": "8,8,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x02": { "File": "blue_spheres_character_OmNom.png", "Rect": "8,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x03": { "File": "blue_spheres_character_OmNom.png", "Rect": "80,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x04": { "File": "blue_spheres_character_OmNom.png", "Rect": "152,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x05": { "File": "blue_spheres_character_OmNom.png", "Rect": "224,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x06": { "File": "blue_spheres_character_OmNom.png", "Rect": "296,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x07": { "File": "blue_spheres_character_OmNom.png", "Rect": "368,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x08": { "File": "blue_spheres_character_OmNom.png", "Rect": "440,80,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x09": { "File": "blue_spheres_character_OmNom.png", "Rect": "88,8,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x0a": { "File": "blue_spheres_character_OmNom.png", "Rect": "160,8,64,64", "Center": "32,48" },
+	"bluesphere_slot248_0x0b": { "File": "blue_spheres_character_OmNom.png", "Rect": "232,8,64,64", "Center": "32,48" }
+}

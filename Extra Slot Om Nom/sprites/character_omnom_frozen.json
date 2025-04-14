@@ -1,0 +1,4 @@
+{
+	"character_omnom_frozen_0x00":  { "File": "frozenomnom.png", "Rect": "0,0,48,45", "Center": "24,22" },
+	"character_superomnom_frozen_0x00":  { "File": "frozensuperomnom.png", "Rect": "0,0,48,45", "Center": "24,22" },
+}

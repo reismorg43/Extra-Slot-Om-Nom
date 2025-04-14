@@ -1,0 +1,4 @@
+{
+	"character_sonic_0xfe":  { "File": "ending.bmp", "Rect": "0,0,48,48", "Center": "24,28" },
+	"character_sonic_0xff":  { "File": "ending.bmp", "Rect": "48,0,48,48", "Center": "24,28" },
+}

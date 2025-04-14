@@ -1,0 +1,11 @@
+{
+	"OmNomIdle_0": { "File": "character_OmNom.bmp", "Rect": "64,8,48,48", "Center": "24,28" },
+	"OmNomIdle_1": { "File": "character_OmNom.bmp", "Rect": "120,8,48,48", "Center": "24,28" },
+	"OmNomIdle_2": { "File": "character_OmNom.bmp", "Rect": "176,8,48,48", "Center": "24,28" },
+	"OmNomIdle_3": { "File": "character_OmNom.bmp", "Rect": "232,8,48,48", "Center": "24,28" },
+	
+	"SuperOmNomIdle_0": { "File": "SuperIdle.bmp", "Rect": "0,0,48,51", "Center": "24,30" },
+	"SuperOmNomIdle_1": { "File": "SuperIdle.bmp", "Rect": "49,0,48,51", "Center": "24,30" },
+	"SuperOmNomIdle_2": { "File": "SuperIdle.bmp", "Rect": "98,0,48,51", "Center": "24,30" },
+	"SuperOmNomIdle_3": { "File": "SuperIdle.bmp", "Rect": "49,0,48,51", "Center": "24,30" },
+}

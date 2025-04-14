@@ -1,0 +1,14 @@
+{
+	"character_slot248_continue_0x00": { "File": "omnom_misc_t.png", "Rect": "8,8,48,48", "Center": "24,28" },
+	"character_slot248_continue_0x01": { "File": "omnom_misc_t.png", "Rect": "64,8,48,48", "Center": "24,28" },
+
+	"continue_icon_slot248_wait_0x00": { "File": "omnom_misc_t.png", "Rect": "128,8,40,40", "Center": "20,20" },
+	"continue_icon_slot248_wait_0x01": { "File": "omnom_misc_t.png", "Rect": "176,8,40,40", "Center": "20,20" },
+
+	"character_slot248_ending_0x00": { "File": "ending.bmp", "Rect": "0,0,48,48", "Center": "24,24" },
+	"character_slot248_ending_0x01": { "File": "ending.bmp", "Rect": "48,0,48,48", "Center": "24,24" },
+
+	"tornado_slot248_pilot": { "File": "omnom_misc_t.png", "Rect": "8,120,48,48", "Center": "28,32" },
+	"tornado_slot248_pilot_small": { "File": "omnom_misc_t.png", "Rect": "64,128,32,32", "Center": "16,20" },
+	"tornado_slot248_small": { "File": "omnom_misc_t.png", "Rect": "104,128,32,32", "Center": "16,20" }
+}

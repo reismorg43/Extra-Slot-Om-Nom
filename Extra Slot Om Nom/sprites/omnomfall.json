@@ -1,0 +1,4 @@
+{
+    "omnom_fall_0":  { "File": "character_OmNom.bmp", "Rect": "8,232,48,48", "Center": "24,28" },
+	"omnom_fall_1":  { "File": "character_OmNom.bmp", "Rect": "120,232,48,48", "Center": "24,28" },
+}

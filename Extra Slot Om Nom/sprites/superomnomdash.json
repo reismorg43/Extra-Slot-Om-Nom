@@ -1,0 +1,6 @@
+{
+    "SuperNomDash0":  { "File": "SuperOmNomDash.bmp", "Rect": "0,0,48,48", "Center": "24,28" },
+	"SuperNomDash1":  { "File": "SuperOmNomDash.bmp", "Rect": "49,0,48,48", "Center": "24,28" },
+	"SuperNomDash2":  { "File": "SuperOmNomDash.bmp", "Rect": "98,0,48,48", "Center": "24,28" },
+	"SuperNomDash3":  { "File": "SuperOmNomDash.bmp", "Rect": "147,0,48,48", "Center": "24,28" },
+}

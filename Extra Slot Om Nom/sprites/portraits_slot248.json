@@ -1,0 +1,9 @@
+{
+	"dataSel_savePortrait_slot248":  { "File": "datasel_savePortrait_slot248.png", "Rect": "0,0,80,56", "Center": "40,120" },
+	"dataSel_savePortrait_superslot248":  { "File": "datasel_savePortrait_slot248.png", "Rect": "80,0,80,56", "Center": "40,120" },
+	"Clear_slot248":  { "File": "datasel_savePortrait_slot248.png", "Rect": "80,0,80,56", "Center": "40,120" },
+
+	"ESS_Zone_Es248_0":  { "File": "datasel_savePortrait_slot248.png", "Rect": "0,0,80,56", "Center": "40,28" },
+	"ESS_Zone_Es248_1":  { "File": "datasel_savePortrait_slot248.png", "Rect": "80,0,80,56", "Center": "40,28" },
+	"ESS_Zone_Es248_2":  { "File": "datasel_savePortrait_slot248.png", "Rect": "80,0,80,56", "Center": "40,28" }
+}

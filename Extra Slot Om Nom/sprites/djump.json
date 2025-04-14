@@ -1,0 +1,10 @@
+{
+	"djump_0":  { "File": "Om Nom Double Jump 1.png", "Rect": "0,0,45,45", "Center": "24,24" },
+	"djump_1":  { "File": "Om Nom Double Jump 1.png", "Rect": "0,0,45,45", "Center": "24,24" },
+	"djump_2":  { "File": "Om Nom Double Jump 2.png", "Rect": "0,0,48,45", "Center": "24,24" },
+	"djump_3":  { "File": "Om Nom Double Jump 2.png", "Rect": "0,0,48,45", "Center": "24,24" },
+	"superdjump_0":  { "File": "SuperOmNomFall.bmp", "Rect": "0,0,45,45", "Center": "24,24" },
+	"superdjump_1":  { "File": "SuperOmNomFall.bmp", "Rect": "0,0,45,45", "Center": "24,24" },
+	"superdjump_2":  { "File": "SuperOmNomFall.bmp", "Rect": "0,0,45,45", "Center": "24,24" },
+	"superdjump_3":  { "File": "SuperOmNomFall.bmp", "Rect": "0,0,45,45", "Center": "24,24" },
+}
