@@ -1,0 +1,24 @@
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+    if (sfxId == 0x62)
+    {    
+	    if (global.xtrachar == 248)
+            return "62_omnom"
+    }
+	else if (sfxId == 0x36)
+	{
+        if (global.xtrachar == 248) 
+            return "36_omnom"
+    }
+    else if (sfxId == 0xB9)
+    { 
+        if (global.xtrachar == 248) 
+            return "B9_omnom"
+    }
+   else if (sfxId == 0x9F)
+    { 
+        if (global.xtrachar == 248) 
+            return "9F_omnom"
+    }
+    return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}

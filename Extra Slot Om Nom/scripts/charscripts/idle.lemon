@@ -1,0 +1,94 @@
+global bool charIdleStarted
+
+constant array<u64> OMNOM_IDLEANIM =
+{
+    "0",
+    "1",
+    "2",
+    "3",
+    "2",
+    "3",
+    "2",
+    "3",
+    "2",
+    "3",
+    "2",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+}
+
+function u64 Standalone.getModdedAnimationSpriteKey(u8 character, u16 animationSpriteEx)
+{
+    if (global.xtrachar != 248 || character != CHARACTER_SONIC)
+        return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+
+        if ((char.animation.sprite >= 0xbb) && (char.animation.sprite <= 0xc2)) || ((char.animation.sprite >= 0xad) && (char.animation.sprite <= 0xaf)) || (char.animation.sprite == 0xd9) && (char.state == char.state.STANDING)
+{
+		if (char.animation.timer > 8)
+	    	char.animation.timer = 8
+		if (char.animation.timer == 0)
+		{
+			char.animation.timer = 8
+			++char.animation.frame
+		}
+		if (char.animation.frame > 16)
+		    char.animation.frame = 16
+	}
+        if ((char.animation.sprite >= 0xbb) && (char.animation.sprite <= 0xc2)) || ((char.animation.sprite >= 0xad) && (char.animation.sprite <= 0xaf)) || (char.animation.sprite == 0xd9) && (char.state == char.state.STANDING)
+	{
+		if !(charIdleStarted)
+		{
+			charIdleStarted = true
+			char.animation.frame = 0
+		}
+        return stringformat("OmNomIdle_%s", OMNOM_IDLEANIM[char.animation.frame])
+    }
+    else
+		charIdleStarted = false
+
+return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+}
+
+constant array<u64> SUPEROMNOM_IDLEANIM =
+{
+    "0",
+    "1",
+    "2",
+    "3",
+}
+
+function u64 Standalone.getModdedAnimationSpriteKey(u8 character, u16 animationSpriteEx)
+{
+    if (global.xtrachar != 248 || character != CHARACTER_SONIC || !super.active)
+        return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+
+        if ((char.animation.sprite >= 0xbb) && (char.animation.sprite <= 0xc2)) || ((char.animation.sprite >= 0xad) && (char.animation.sprite <= 0xaf)) || (char.animation.sprite == 0xd9) && (char.state == char.state.STANDING)
+{
+		if (char.animation.timer > 6)
+	    	char.animation.timer = 6
+		if (char.animation.timer == 0)
+		{
+			char.animation.timer = 6
+			++char.animation.frame
+		}
+		if (char.animation.frame > 3)
+		    char.animation.frame = 0
+	}
+	    if ((char.animation.sprite >= 0xbb) && (char.animation.sprite <= 0xc2)) || ((char.animation.sprite >= 0xad) && (char.animation.sprite <= 0xaf)) || (char.animation.sprite == 0xd9) && (char.state == char.state.STANDING)
+	{
+		if !(charIdleStarted)
+		{
+			charIdleStarted = true
+			char.animation.frame = 0
+		}
+        return stringformat("SuperOmNomIdle_%s", SUPEROMNOM_IDLEANIM[char.animation.frame])
+    }
+    else
+		charIdleStarted = false
+
+return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+}

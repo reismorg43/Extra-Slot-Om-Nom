@@ -1,0 +1,32 @@
+global u8 Palette
+
+function string getExtraCharacterPaletteKey(u8 xtrachar)
+{
+    if (xtrachar == 248)
+    {
+        if (Palette == 0x00)
+			return "S1"
+		else if (Palette == 0x01)
+            return "S2"
+        else if (Palette == 0x02)
+            return "character_palette_slot248"
+		else if (Palette == 0x03)
+			return "SM"
+		else if (Palette == 0x04)
+			return "OJ"
+		else if (Palette == 0x05)
+			return "Blue"
+		else if (Palette == 0x06)
+			return "Pink"
+		else if (Palette == 0x07)
+			return "Sonic Styled"
+		else if (Palette == 0x08)
+			return "Dark"
+		else if (Palette == 0x09)
+			return "Sus Nom"
+		else
+            return "character_palette_slot248"
+        
+    }
+return base.getExtraCharacterPaletteKey(xtrachar)
+}

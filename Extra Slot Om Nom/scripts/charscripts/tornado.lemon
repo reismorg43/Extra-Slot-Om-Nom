@@ -1,0 +1,13 @@
+
+function u64 stringformat(u64 format, u64 arg1)
+{
+	if (XtraChar == 248) && (isSonicIntro() && format == "character_slot248_0x%02x" && char.position.x.u16 < 0x500)
+	{
+		if (arg1 == 0xba)
+		{
+			format = "slot248_tornado_m_0%d"
+			arg1 = (level.framecounter >> 2) % 2
+		}
+	}
+	return base.stringformat(format, arg1)
+}

@@ -1,0 +1,11 @@
+function string getESCharacterFallSpriteKey(u8 character, u8 extrachar)
+{
+	if (extrachar == 248 && character == CHARACTER_SONIC)
+	{
+		if (super.active)
+		    return "superomnom_fall_%d"
+		else
+		    return "omnom_fall_%d"
+	}
+	return base.getESCharacterFallSpriteKey(character, extrachar)
+}

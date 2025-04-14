@@ -1,0 +1,7 @@
+function u64 GetXtraName(u8 xtrachar, u8 char)
+{
+	if (xtrachar == 248 && char == CHARACTER_SONIC)
+		return "slot248"
+
+	return base.GetXtraName(xtrachar, char)
+}

@@ -1,0 +1,19 @@
+global u8 Sprite
+
+function string getCharacterSpriteKey(u8 character, bool isSuperActive)
+{
+ if (character == CHARACTER_SONIC && global.xtrachar == 248)
+ {
+   if (Sprite == 0)
+  return (super.active) ? "character_superslot248" : "character_slot248"
+  if (Sprite == 1)
+  return (super.active) ? "character_superslot248_mania" : "character_slot248_mania"
+  if (Sprite == 2)
+  return (super.active) ? "character_darksuperslot248" : "character_slot248"
+  if (Sprite == 3)
+  return (super.active) ? "character_supersusnom" : "character_susnom"
+  if (Sprite == 4)
+  return (super.active) ? "character_superslot248" : "character_ducklife9"
+  }
+   return base.getCharacterSpriteKey(character, isSuperActive)
+}

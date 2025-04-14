@@ -1,0 +1,24 @@
+function bool Standalone.onWriteToSpriteTable(s16 px, s16 py, u16 renderQueue)
+{
+	u8 gameMode = global.game_mode & 0x7f
+	bool prioFlag = (objA0.sprite_attributes & 0x8000) != 0
+	u64 key
+	u8 atex
+	u8 flags = ((objA0.render_flags & 0x01) ? SPRITE_FLAG_FLIP_X : 0) | ((objA0.render_flags & 0x02) ? SPRITE_FLAG_FLIP_Y : 0) | ((objA0.sprite_attributes & 0x8000) ? SPRITE_FLAG_PRIO : 0)
+	
+	// Best ending screen
+	if (objA0.update_address == 0x1ffbe0 || objA0.update_address == 0x1ffbd0)
+	{
+		if (objA0.value3a == 0x01)
+		{
+			u8 Character = 3
+			atex = 0x40 + Character * 0x20
+			
+				key = (objA0.animation.sprite == 0x01 ? "character_slot248_ending_0x00": objA0.animation.sprite == 0x02 ? "character_slot248_ending_0x01": objA0.animation.sprite == 0x03 ? "character_slot248_0xb0": "character_slot248_0xb3")
+			
+			Renderer.drawCustomSprite(key, px, py, atex, flags, objA0.value42 + 0xff)
+			return true
+		}
+	}
+	    return base.Standalone.onWriteToSpriteTable(px, py, renderQueue)
+}

@@ -1,0 +1,8 @@
+//check for comp stats
+function bool ExtraChar.CompetitionMode.isCharacterAvailable(u8 xtrachar)
+{
+	if (xtrachar == 248)
+		return true
+	
+	return base.ExtraChar.CompetitionMode.isCharacterAvailable(xtrachar)
+}

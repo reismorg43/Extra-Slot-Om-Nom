@@ -1,0 +1,7 @@
+function bool Character.updateSuperPeelout()
+{
+	if (global.xtrachar == 248 && char.character == CHARACTER_SONIC)
+		return false
+
+	return base.Character.updateSuperPeelout()
+}

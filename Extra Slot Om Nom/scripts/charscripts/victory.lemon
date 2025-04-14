@@ -1,0 +1,51 @@
+function u64 Standalone.getModdedAnimationSpriteKey(u8 character, u16 animationSpriteEx)
+{
+    if !(char.state == char.state.WIN_POSE || char.state == char.state.STANDING) || !(character == CHARACTER_SONIC) || !(u8[0xffffe654] == 248)
+        return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+
+if (character == CHARACTER_SONIC && Sprite == 0)
+{
+    if (char.state == char.state.WIN_POSE)
+	{
+		if (char.animation.timer > 6)
+	    	char.animation.timer = 6
+		if (char.animation.timer == 0)
+		{
+			char.animation.timer = 6
+			++char.animation.frame
+		}
+		if (char.animation.frame > 27)
+		    char.animation.frame = 25
+	}
+
+    if (char.state == char.state.WIN_POSE)
+        return stringformat("OmNomWinPose_%d",  char.animation.frame)
+}
+return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+}
+
+function u64 Standalone.getModdedAnimationSpriteKey(u8 character, u16 animationSpriteEx)
+{
+    if !(char.state == char.state.WIN_POSE || char.state == char.state.STANDING) || !(character == CHARACTER_SONIC) || !(u8[0xffffe654] == 248) || (!super.active)
+        return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+
+if (character == CHARACTER_SONIC && Sprite == 0 && super.active)
+{
+    if (char.state == char.state.WIN_POSE)
+	{
+		if (char.animation.timer > 6)
+	    	char.animation.timer = 6
+		if (char.animation.timer == 0)
+		{
+			char.animation.timer = 6
+			++char.animation.frame
+		}
+		if (char.animation.frame > 13)
+		    char.animation.frame = 13
+	}
+
+    if (char.state == char.state.WIN_POSE)
+        return stringformat("SuperOmNomWinPose_%d",  char.animation.frame)
+}
+return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+}

@@ -1,0 +1,35 @@
+global u8 UniqueFrozenSprites.frozenAnimFrame
+
+function string UniqueFrozenSprites.getExtraSlotFrozenSprite(u8 slot)
+{
+	//This is an example of how to add support to ESU characters. You may use any sprites for this.
+	//If you do not do it, this mod will use the default death sprite for the character (assuming it picks the correct one
+	//depending on character. Looking at you, Extra Slot Ray.)
+	
+	if slot == 248
+	{
+		if super.active
+		{
+		    if UniqueFrozenSprites.frozenAnimFrame == 0 //Looking at camera
+			return "character_superomnom_frozen_0x00"
+		else if UniqueFrozenSprites.frozenAnimFrame == 1 //Looking left
+			return "character_superomnom_frozen_0x00"
+		else if UniqueFrozenSprites.frozenAnimFrame == 2 //Looking right
+			return "character_superomnom_frozen_0x00"
+		else if UniqueFrozenSprites.frozenAnimFrame == 3 //Breaking out
+			return "character_superomnom_frozen_0x00"
+		}
+		else
+		{
+		    if UniqueFrozenSprites.frozenAnimFrame == 0 //Looking at camera
+			return "character_omnom_frozen_0x00"
+		else if UniqueFrozenSprites.frozenAnimFrame == 1 //Looking left
+			return "character_omnom_frozen_0x00"
+		else if UniqueFrozenSprites.frozenAnimFrame == 2 //Looking right
+			return "character_omnom_frozen_0x00"
+		else if UniqueFrozenSprites.frozenAnimFrame == 3 //Breaking out
+			return "character_omnom_frozen_0x00"
+		}
+	}
+	return base.UniqueFrozenSprites.getExtraSlotFrozenSprite(slot)
+}

@@ -1,0 +1,13 @@
+function u64 Standalone.getModdedAnimationSpriteKey(u8 character, u16 animationSpriteEx)
+{
+    if (global.xtrachar != 248 || character != CHARACTER_SONIC || !super.active)
+        return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+        
+    if (char.state == char.state.RUNNING) && (char.animation.sprite < 0x31) && (abs(char.groundspeed) > 0xc00) && super.active
+    {
+        animationSpriteEx = ((global.framecounter.low) % (4))
+        return stringformat("SuperNomDash%d", animationSpriteEx)
+    }
+    
+     return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+}

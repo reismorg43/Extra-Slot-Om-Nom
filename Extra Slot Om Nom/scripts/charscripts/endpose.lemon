@@ -1,0 +1,13 @@
+
+
+function string getCharacterEndPoseSpriteKey(u8 character)
+{
+ if (character == CHARACTER_SONIC && global.xtrachar == 248)
+ {
+   if (super.active)
+  return "endpose_superslot248"
+  else
+  return "endpose_slot248"
+  }
+   return base.getCharacterEndPoseSpriteKey(character)
+}
