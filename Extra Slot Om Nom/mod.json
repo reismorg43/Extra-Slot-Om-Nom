@@ -1,1 +1,62 @@
-
+{
+"Metadata":
+{
+"Name": "Extra Slot Om Nom",
+"Author": "Morgan Reiss",
+"Description": "This adds Om Nom from Cut the Rope as an extra slot instead of replacing sonic's slot. Om Nom can now eat his candies in peace.",
+"ModVersion": "1.0",
+},
+"Settings":
+{
+"Om Nom Options":
+[
+{
+"InternalName": "Colorful",
+"DisplayName": "Palettes",
+"Variable": "Palette",
+"DefaultValue": "2",
+"Category": "Visual",
+"Options":
+{
+"0": "S1",
+"1": "S2",
+"2": "S3(default)",
+"3": "SM",
+"4": "OJ",
+"5": "Blue",
+"6": "Pink",
+"7": "Sonic Styled",
+"8": "Dark",
+"9": "Sus Nom",
+}
+},
+{
+"InternalName": "Sprites",
+"DisplayName": "Skin:",
+"Variable": "Sprite",
+"DefaultValue": "0",
+"Category": "Sprite Style",
+"Options":
+{
+"0": "S3(default)",
+"1": "SM",
+"2": "Dark",
+"3": "Sus Nom",
+"4": "Duck Life 9 Style",
+}
+},
+{
+"InternalName": "Powers",
+"DisplayName": "Moveset:",
+"Variable": "CTRMagicPowers",
+"DefaultValue": "0",
+"Category": "Gameplay",
+"Options":
+{
+"0": "On(default)",
+"1": "Off",
+}
+},
+]
+}
+}
