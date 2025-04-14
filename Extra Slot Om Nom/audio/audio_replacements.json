@@ -1,1 +1,14 @@
+{
+	// You can replace in-game music using lines like the following example.
+	//  - Use only Ogg Vorbis audio files in format: Stereo, 48kHz
+	//  - The key (like "0F") refers to the sound ID -- it's the same IDs as in S3K's level select screen
+	//  - "Type" has to be one of "Music", "Jingle", "Sound"
+	//  - "LoopStart" is optional, the number is the sample number where to restart when reaching the end
+	//  - Make sure that this file is valid JSON (e.g. add a comma at the end of each line except for the last)
 
+	//SFX:
+	"36_omnom": { "File": "Skidding.ogg", "Type": "Sound" },
+	"62_omnom": { "File": "Jump.ogg", "Type": "Sound" },
+        "9F_omnom": { "File": "Transform.ogg", "Type": "Sound" },
+        "B9_omnom": { "File": "RingLoss.ogg", "Type": "Sound" },
+}
